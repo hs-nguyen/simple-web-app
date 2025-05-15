@@ -1,10 +1,10 @@
 version: 0.2
 phases:
   install:
-  runtime-version:
-    nodejs: latest
-  commands:
-  - npm install
+    runtime-version:
+      nodejs: latest
+    commands:
+      - npm install
   pre_build:
     commands:
     - echo Nothing in the pre-build
