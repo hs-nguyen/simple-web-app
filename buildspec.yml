@@ -9,7 +9,7 @@ phases:
       - npm install
   post_build:
     commands:
-      - aws s3 cp --recursive s3://cicd-web-application-demo/nodejs_artifact/
+      - aws s3 cp --recursive ./dist s3://cicd-web-application-demo/nodejs_artifact/
 artifacts:
   files: 
     - dist/**
