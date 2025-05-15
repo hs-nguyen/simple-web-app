@@ -1,15 +1,18 @@
 version: 0.2
 phases:
+  install:
+  runtime-version:
+    nodejs: latest
+  commands:
+  - npm install
   pre_build:
     commands:
     - echo Nothing in the pre-build
   build:
     commands:
-      - echo install source dependencies 
-      - npm install
+      - npm run build
   post_build:
     commands:
-      - npm run build
       - aws s3 cp --recursive ./dist s3://cicd-web-application-demo/nodejs_artifact/
 artifacts:
   files: 
