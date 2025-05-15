@@ -15,7 +15,7 @@ const html = `
   <head><title>Static Page</title></head>
   <body style='background-color:#283E5B'>
     <h1 style='color: orange; text-align:center'>
-      AWS First Cloud Journey (${os.hostname()})
+      AWS CICD PIPELINE (${os.hostname()})
     </h1>
   </body>
 </html>
