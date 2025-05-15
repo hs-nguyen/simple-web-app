@@ -13,8 +13,8 @@ phases:
       - npm run build
   post_build:
     commands:
-      - aws s3 cp --recursive . s3://cicd-web-application-demo/nodejs_artifact/ --exclude "node_modules/*"
+      - aws s3 cp --recursive . s3://cicd-web-application-demo/ --exclude "node_modules/*"
 artifacts:
-  files: 
+  files:
     - dist/**
     - '!node_modules/**/*'
