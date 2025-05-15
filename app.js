@@ -31,8 +31,8 @@ fs.writeFileSync('build/index.html', html);
 console.log("index.html has been generated.");
 
 // Express app
-const app = express();
-app.use(express.static('build')); // serve static files from build
+ const app = express();
+ app.use(express.static('build')); // serve static files from build
 
-app.listen(PORT, HOST);
-console.log(`Running on http://${HOST}:${PORT}`);
+// app.listen(PORT, HOST);
+// console.log(`Running on http://${HOST}:${PORT}`);
