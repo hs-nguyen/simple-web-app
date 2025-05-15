@@ -2,10 +2,10 @@ version: 0.2
 phases:
   pre_build:
     commands:
-    - Nothing in the pre-build
+    - echo Nothing in the pre-build
   build:
     commands:
-      - install dependencies 
+      - echo install source dependencies 
       - npm install
   post_build:
     commands:
