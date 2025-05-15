@@ -22,12 +22,12 @@ const html = `
 `;
 
 // Create /build directory if it doesn't exist
-if (!fs.existsSync('build')) {
-  fs.mkdirSync('build');
-}
+//if (!fs.existsSync('build')) {
+//  fs.mkdirSync('build');
+//}
 
 // Write HTML file
-fs.writeFileSync('build/index.html', html);
+fs.writeFileSync('index.html', html);
 console.log("index.html has been generated.");
 
 // Express app
